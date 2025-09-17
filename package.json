@@ -13,7 +13,8 @@
     "test": "nyc --reporter=lcov ts-node ./node_modules/mocha/bin/_mocha test/**/*.test.ts --config test/configs/mocha.json -- --bail",
     "posttest": "eslint ./src/**/*.ts  ./test/**/*.ts",
     "clean": "rimraf coverage output dist",
-    "prettier": "prettier --write ./src/*.ts ./src/**/*.ts"
+    "prettier": "prettier --write ./src/*.ts ./src/**/*.ts",
+    "compile": "tsc"
   },
   "repository": {
     "type": "git",
